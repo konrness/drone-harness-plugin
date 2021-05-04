@@ -10,10 +10,10 @@ steps:
   image: plugins/docker
   settings:
     username:
-      from_secret: u_docker
+      from_secret: docker_username
     password: 
-      from_secret: p_docker
-    repo: luisredda/drone-harness-plugin
+      from_secret: docker_password
+    repo: konrness/drone-harness-plugin
     auto_tag: true
 - name: harness-deploy
   image: luisredda/drone-harness-plugin
